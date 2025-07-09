@@ -16,7 +16,7 @@
 ## ✨ Features
 
 - 🔁 Swap currency functionality
-- 🌐 20+ world currencies with flags, symbols, and full names
+- 🌐 20+ world currencies symbols and full names
 - 💱 Real-time currency exchange rates via [ExchangeRate API](https://www.exchangerate-api.com/)
 - 🧊 Sleek glassmorphism UI (designed in Figma)
 - 🌓 Gradient-based modern color scheme
