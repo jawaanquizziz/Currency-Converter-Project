@@ -1,4 +1,26 @@
-const apiKey = "7d987ed20cc824c04aab3037"; // Your ExchangeRate-API key
+const apiKey = "7d987ed20cc824c04aab3037"; 
+const currencySymbols = {
+  USD: "$",
+  INR: "₹",
+  EUR: "€",
+  GBP: "£",
+  JPY: "¥",
+  AUD: "A$",
+  CAD: "C$",
+  CHF: "CHF",
+  CNY: "¥",
+  RUB: "₽",
+  ZAR: "R",
+  SGD: "S$",
+  HKD: "HK$",
+  NZD: "NZ$",
+  KRW: "₩",
+  BRL: "R$",
+  MXN: "MX$",
+  AED: "د.إ",
+  SAR: "﷼",
+  TRY: "₺"
+};
 
 async function convertCurrency() {
   const amount = document.getElementById("amount").value;
@@ -21,7 +43,10 @@ async function convertCurrency() {
     if (data.result === "success") {
       const rate = data.conversion_rates[to];
       const converted = (amount * rate).toFixed(2);
-      resultDiv.innerText = `${amount} ${from} = ${converted} ${to}`;
+      const fromSymbol = currencySymbols[from] || from;
+      const toSymbol = currencySymbols[to] || to;
+      resultDiv.innerText = `${fromSymbol}${amount} ${from} = ${toSymbol}${converted} ${to}`;
+
     } else {
       resultDiv.innerText = "Conversion failed. Try again.";
     }
@@ -38,7 +63,5 @@ function swapCurrencies() {
   const temp = fromSelect.value;
   fromSelect.value = toSelect.value;
   toSelect.value = temp;
-
-  // Optional: auto-convert after swapping
   convertCurrency();
 }
