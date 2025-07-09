@@ -7,11 +7,6 @@
   <i>Convert global currencies with a tap. Clean design. Live rates. All in your browser.</i>
 </p>
 
-<p align="center">
-  <a href="https://jawaanquizziz.github.io/Currency-Converter-Project/">
-    🚀 <strong>Click here to try it live</strong> ➜ jawaanquizziz.github.io/Currency-Converter-Project/
-  </a>
-</p>
 
 ---
 
