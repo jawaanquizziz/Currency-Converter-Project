@@ -1,45 +1,60 @@
-<h1 align="center">
-  🌍 Currency Converter Web App
-</h1>
+<h1 align="center">🌍 Currency Converter Web App</h1>
 
 <p align="center">
-  <b>Real-time, responsive and stylish currency converter built with 💻 HTML, 🎨 CSS, and ⚙️ JavaScript.</b><br/>
-  <i>Convert global currencies with a tap. Clean design. Live rates. All in your browser.</i>
+  A stylish, responsive, and real-time currency converter built with 💻 HTML, 🎨 CSS, and ⚙️ JavaScript.<br/>
+  Designed in 🎨 <b>Figma</b> and deployed live using 🚀 <b>Netlify</b>.
 </p>
 
+<p align="center">
+  <a href="https://jscurrencee.netlify.app/" target="_blank">
+    🟢 <strong>Live Demo ➜ jscurrencee.netlify.app</strong>
+  </a>
+</p>
 
 ---
 
 ## ✨ Features
 
-- 🔁 Swap currencies instantly
-- 💸 Live currency conversion via ExchangeRate API
-- 🌐 20+ global currencies with flags and symbols
-- 🧊 Sleek glassmorphism UI (Figma-inspired)
-- 🌓 Modern gradient theme
-- 📱 Fully responsive (mobile + desktop)
-- 🔖 Custom favicon & dynamic tab title
+- 🔁 Swap currency functionality
+- 🌐 20+ world currencies with flags, symbols, and full names
+- 💱 Real-time currency exchange rates via [ExchangeRate API](https://www.exchangerate-api.com/)
+- 🧊 Sleek glassmorphism UI (designed in Figma)
+- 🌓 Gradient-based modern color scheme
+- 📱 Fully responsive design (works on phones and laptops)
+- 🧠 Dynamic tab title showing conversion result
 
 ---
 
 ## 🧪 Tech Stack
 
-- **HTML** – markup
-- **CSS** – UI design & layout
-- **JavaScript** – logic & API integration
-- **ExchangeRate API** – real-time data
-- **GitHub Pages** – hosting
-- **Figma** – original design prototype
+| Technology | Purpose |
+|------------|---------|
+| 💻 HTML    | Page structure |
+| 🎨 CSS     | UI styling, layout, glassmorphism |
+| ⚙️ JavaScript | Functionality, API integration, logic |
+| 📐 Figma   | UI/UX design before development |
+| 🌐 ExchangeRate API | Live currency data |
+| ☁️ Netlify | Hosting and deployment |
 
 ---
 
-## 📌 How to Run
+## 📁 Folder Structure
+Currency-Converter-Project/
+├── index.html # Main HTML file
+├── style.css # All styles and layout
+├── script.js # Conversion logic + API
+└── README.md # You're reading it 😉
 
-Just visit the link above – no install, no setup.
+---
 
-Or clone locally:
+## 🧠 How to Use
+
+> Just open the link and convert!  
+> No signup, no login, no download.
 
 ```bash
 git clone https://github.com/jawaanquizziz/Currency-Converter-Project.git
 cd Currency-Converter-Project
-open webpage.html
+open index.html
+
+
