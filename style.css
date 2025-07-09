@@ -90,3 +90,27 @@ body {
   color: #222;
   text-align: center;
 }
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.swap-btn {
+  flex: 1;
+  padding: 14px;
+  background: #fff;
+  color: #333;
+  font-weight: 700;
+  border: 1px solid #a8edea;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.swap-btn:hover {
+  background: #a8edea;
+  color: #222;
+}

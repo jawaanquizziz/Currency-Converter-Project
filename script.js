@@ -1,3 +1,5 @@
+const apiKey = "7d987ed20cc824c04aab3037"; // Your ExchangeRate-API key
+
 async function convertCurrency() {
   const amount = document.getElementById("amount").value;
   const from = document.getElementById("from").value;
@@ -12,16 +14,31 @@ async function convertCurrency() {
   resultDiv.innerText = "Converting...";
 
   try {
-    const response = await fetch(`https://api.exchangerate.host/convert?from=${from}&to=${to}&amount=${amount}`);
+    const url = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${from}`;
+    const response = await fetch(url);
     const data = await response.json();
 
-    if (data.success && data.result !== undefined) {
-      resultDiv.innerText = `${amount} ${from} = ${data.result.toFixed(2)} ${to}`;
+    if (data.result === "success") {
+      const rate = data.conversion_rates[to];
+      const converted = (amount * rate).toFixed(2);
+      resultDiv.innerText = `${amount} ${from} = ${converted} ${to}`;
     } else {
       resultDiv.innerText = "Conversion failed. Try again.";
     }
   } catch (error) {
-    resultDiv.innerText = "Error connecting to the API.";
+    resultDiv.innerText = "Error connecting to API.";
+    console.error(error);
   }
 }
 
+function swapCurrencies() {
+  const fromSelect = document.getElementById("from");
+  const toSelect = document.getElementById("to");
+
+  const temp = fromSelect.value;
+  fromSelect.value = toSelect.value;
+  toSelect.value = temp;
+
+  // Optional: auto-convert after swapping
+  convertCurrency();
+}
