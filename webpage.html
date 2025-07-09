@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="background">
+    <div class="glass-box">
+      <h1 class="heading">Currency Converter</h1>
+
+      <label class="label" for="amount">Amount</label>
+      <input id="amount" type="number" placeholder="Enter amount" class="input"/>
+
+      <div class="currency-row">
+        <div>
+          <label class="label" for="from">From Currency</label>
+          <select id="from" class="dropdown">
+                        <!-- Use this for both dropdowns -->
+            <option value="USD">USD - $</option>
+            <option value="INR">INR - ₹</option>
+            <option value="EUR">EUR - €</option>
+            <option value="GBP">GBP - £</option>
+            <option value="JPY">JPY - ¥</option>
+            <option value="AUD">AUD - $</option>
+            <option value="CAD">CAD - $</option>
+            <option value="CHF">CHF - Fr</option>
+            <option value="CNY">CNY - ¥</option>
+            <option value="RUB">RUB - ₽</option>
+            <option value="ZAR">ZAR - R</option>
+            <option value="SGD">SGD - $</option>
+            <option value="HKD">HKD - $</option>
+            <option value="NZD">NZD - $</option>
+            <option value="KRW">KRW - ₩</option>
+            <option value="BRL">BRL - R$</option>
+            <option value="MXN">MXN - $</option>
+            <option value="AED">AED - د.إ</option>
+            <option value="SAR">SAR - ر.س</option>
+            <option value="TRY">TRY - ₺</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="label" for="to">To Currency</label>
+          <select id="to" class="dropdown">
+            <option value="USD">USD - $</option>
+            <option value="INR">INR - ₹</option>
+            <option value="EUR">EUR - €</option>
+            <option value="GBP">GBP - £</option>
+            <option value="JPY">JPY - ¥</option>
+            <option value="AUD">AUD - $</option>
+            <option value="CAD">CAD - $</option>
+            <option value="CHF">CHF - Fr</option>
+            <option value="CNY">CNY - ¥</option>
+            <option value="RUB">RUB - ₽</option>
+            <option value="ZAR">ZAR - R</option>
+            <option value="SGD">SGD - $</option>
+            <option value="HKD">HKD - $</option>
+            <option value="NZD">NZD - $</option>
+            <option value="KRW">KRW - ₩</option>
+            <option value="BRL">BRL - R$</option>
+            <option value="MXN">MXN - $</option>
+            <option value="AED">AED - د.إ</option>
+            <option value="SAR">SAR - ر.س</option>
+            <option value="TRY">TRY - ₺</option>
+          </select>
+        </div>
+      </div>
+
+      <button onclick="convertCurrency()" class="convert-btn">Convert</button>
+      <div id="result" class="result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <center>
+    <h2>Made with Love ❣️ by Jawaan</h2>
+  </center>
+</body>
+
+</html>
